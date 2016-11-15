@@ -2,6 +2,12 @@ function addItem(){
   var input = document.getElementById("newItem").value;
   var list = document.getElementById("listDisplay");
   var item = document.createElement("li");
+  var btnClose = document.createElement("button")
+  btnClose.classList.add("btn","btn-danger","btn-xs");
+  iconClose = document.createElement("span");
+  iconClose.classList.add("glyphicon","glyphicon-remove");
+  btnClose.appendChild(iconClose);
+  item.appendChild(btnClose);
   var itemName = document.createTextNode(input);
   item.appendChild(itemName);
   list.appendChild(item);
