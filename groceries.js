@@ -1,5 +1,14 @@
+var myList = [] ;
 function addItem(){
   var input = document.getElementById("newItem").value;
+  myList.push(input);
+  console.log(myList);
+  myList.findIndex(input)
+      return -1
+    if(myList = -1){
+
+    }
+
   var list = document.getElementById("listDisplay");
   var item = document.createElement("li");
   var btnClose = document.createElement("button")
@@ -18,6 +27,8 @@ function removeParentListItem(){
   var mom = this.parentNode;
   var grandma = mom.parentNode;
   grandma.removeChild(mom);
+  itemRemove = mom.firstChild.textContent;
+  itemIndex = myList(itemRemove);
 }
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
 function setCookie(cname, cvalue, exdays) {
